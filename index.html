@@ -1,39 +1,117 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>My website</title>
-  </head>
-  
-  
-  <body>
-    <h1>Kristopher Rotterman's Profile</h1>
-    <h2>I Am a Web Developer</h2>
-    <hr/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+</head>
+<body>
+<h1>KRISTOPHER ROTTERMAN</h1>
+<img src="data:image/jpeg;base64,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" height="200" alt="Business man">
+<hr>
 
-    <h3> <img src="./assets/images/movie-ranking.png" height="200" alt="Movie Ranking"></h3>
-    <hr/>
-    <h3> <a href="./public/birthday-invite.html">My Birthday Invite Project</a></h3>
-    <h3> <img src="./assets/images/Screen Shot 2023-05-25 at 8.55.40 PM.png" height="200" alt=""></h3>
-    <hr/>
-    <a href="./public/contact.html">Contact Me</a>
-    <a href="./public/about.html">About Us</a>
-  </body>
+<h2>Get in contact</h2>
+ <p> Mobile: (905) 220-4221 <br>
+ Email: Kris.s.rotterman@gmail.com  <br>
+</p>
+
+<p> 4105 South St. <br>
+Calgary, Alberta <br>
+5XT 1M4 <br>
+</p> <hr>
+
+ <h2>Personal Profile</h2>
+ <p>Accomplished Senior Consultant and Manager with 2+ years of experience in luxury customer service, 1.5 years in construction and 3+ years of management experience in the food service industry. Keen to support your company with being an excellent contributor and an outstanding team player.</p>
+<hr>
+
+<h2>Education History</h2>
+
+<p>HERZING COLLEGE | CAMBRIDGE, ON <br>
+    Pre-Apprenticeship Plumbing graduate, 2022</p>
+
+    <p>QUEENS UNIVERSITY | KINGSTON, ON <br> 
+         Varsity Basketball Scholarship <br>
+        Bachelor of Arts, Social Work, 2017</p>
+        <hr>
+    
+<h2>Work Experience</h2>
+
+<h3>Manager <br>
+ Pita Pit | September 2015 – March 2018  <br>
+</h3>
+
+<ul>
+<li>Managed daily operations focusing on efficiency, team collaboration and process improvements.</li>
+<li>Analyzed the performance of team members, conducted performance appraisals, and managed promotion recommendations.</li>
+<li>Managed hiring procedures, shift scheduling, determined and provided training needs, and conducted performance reviews.</li>
+<li>Held associates accountable to meet established operational guidelines, brand standards, customer service expectations, and company policies.</li>
+<li>Implement creative marketing strategies to improve business and sales including managing social media accounts and business meetings.</li>
+</ul>
+
+<h3>SENIOR LIFESTYLE CONSULTANT <br>
+    Aspire Lifestyles | June 2018 - July 2020</h3>
+<ul>
+<li>roven track record of client relationship building, resulting in reduced customer complaints and increased customer retention.</li>
+<li>Consistently received an average customer satisfaction of 15% higher than the industry average.</li>
+<li>Notable ability to understand customers’ needs, develop personalized solutions and communicate effectively.</li>
+<li>Effectively managed client expectations, providing frequent updates and ensuring delivery of high quality customer service.</li>
+<li>Proactively resolve project issues to mitigate delays and to reduce the impact on the client and project timelines.</li>
+<li>Ability to prioritize effectively and manage time to assist multiple clients simultaneously via several platforms including incoming/outgoing calls, emails and digital chat.
+</li>
+</ul>
+
+<h3>SUPERVISOR <br>
+    Bullet Demo | Sept 2020 - March 2022</h3>
+<ul>
+<li>Supervised a 5 man demolition crew to demolish residential, commercial, interior and exterior buildings.</li>
+<li>Maintained schedule flexibility to allow efficient completion.</li>
+<li>Worked long, demanding days of 8-10 hours.</li>
+<li>Knowledgable using power tools and determining best way to get the job done safely and efficiently.</li>
+<li>Ability to be flexible between customer facing discussions and on site management
+    Built client relationships with trust & loyalty to ensure a successful job agreement</li>
+</ul>
+<hr>
+
+<h2>Skills</h2>
+<ul>
+<li>Communication and emotional intelligence</li>
+<li>Attention to detail</li>
+<li>Extremely cautious and careful</li>
+<li>Customer service</li>
+<li>Time management</li>
+<li>Numeracy skills to solve real-world problems</li>
+<li>Physically fit to stand and work on feet for multiple hours.</li>
+<hr>
+
+<h2>Training Complete</h2>
+<ol> 
+<li>Working at heights certified</li>
+<ul>
+    <li>drove sky jack </li>
+    <li>obtained harness</li>
+    <li>passing score of 95% on exam</li>
+</ul>
+<li>Fire extinguisher</li>
+<li>WHIMIS 2015 AIX Safety</li>
+<li>WHIMIS 1988</li>
+</ol>
+<hr>
+
+<h2>Other</h2>
+<ul>
+    <li><a href="./hobbies and contact/index.html">Hobbies</a></li>
+</ul>
+<br>
+<br>
+<br>
 
 
-  </html>
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
 
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
+<footer>
+ Created by Kristopher Rotterman <br>
+    Picture used from <a href="https://www.freepik.com/free-photo/businessman-excited-because-achievement-business_4013212.htm">here</a>
+</footer>
+</body>
 
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
+</html>
